@@ -1,0 +1,78 @@
+name: loveell
+description: A private chat app for couples
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.2 
+  flutter_webrtc: ^0.12.9
+  audioplayers: ^5.2.1
+  url_launcher: ^6.2.1
+  package_info_plus: 9.0.0
+  share_plus: ^12.0.0
+  provider: ^6.0.5
+  image_picker: ^1.0.4
+  flutter_cache_manager: ^3.3.1
+  web_socket_channel: ^2.4.0
+  permission_handler: ^12.0.1
+  video_player: ^2.8.1
+  chewie: ^1.7.4
+  synchronized: ^3.1.0
+  connectivity_plus: ^6.1.0
+  flutter_svg: ^2.0.9
+
+  zego_uikit_prebuilt_live_streaming: ^3.15.6
+  zego_uikit: ^2.28.44
+  zego_zim: ^2.12.0
+  zego_express_engine: ^3.12.0
+
+
+
+  
+  # Firebase
+  firebase_core: ^4.5.0
+  firebase_auth: ^6.2.0
+  cloud_firestore: ^6.1.3
+  
+  # UI & Utilities
+  cupertino_icons: ^1.0.6
+  intl: ^0.20.2
+  google_fonts: ^8.0.2
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # icons-bottom
+  assets:
+    - assets/icons-bottom/chats.png
+    - assets/icons-bottom/profile.png
+    - assets/icons-bottom/map.png
+    - assets/icons-bottom/live.png
+    - assets/icons-bottom/notification.png
+  # icons-header 
+    - assets/icons-header/search-friends.png
+    - assets/icons-header/friend-request.png
+  # icons-profile
+    - assets/icons-profile/email.png
+    - assets/icons-profile/privacy.png
+    - assets/icons-profile/settings.png
+    - assets/icons-profile/calendar.png
+    - assets/icons-profile/notification.png
+    - assets/icons-profile/help.png
+    - assets/icons-profile/logout.png
+
+  
+  
+   

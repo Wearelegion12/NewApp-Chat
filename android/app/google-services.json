@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "200224896102",
+    "project_id": "loveell-app-98b0f",
+    "storage_bucket": "loveell-app-98b0f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200224896102:android:67351ecee9b942163d29a7",
+        "android_client_info": {
+          "package_name": "com.ella.loveell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYZ8b7LCD1ZDFIwLlwPIFAinN3wSfBImU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
