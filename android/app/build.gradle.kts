@@ -1,6 +1,8 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id("com.android.application")
-    id("kotlin-android")
     id("dev.flutter.flutter-gradle-plugin")
     id("com.google.gms.google-services")
 }
@@ -8,16 +10,18 @@ plugins {
 android {
     namespace = "com.ella.loveell"
     compileSdk = 36
-
     ndkVersion = flutter.ndkVersion
-
+    
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
+    // CORRECTED SYNTAX for Kotlin compiler options
+    tasks.withType<KotlinCompile> {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_17
+        }
     }
 
     defaultConfig {
@@ -50,10 +54,8 @@ flutter {
 
 dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
-    implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
-    implementation("com.google.firebase:firebase-storage")
     implementation("com.google.firebase:firebase-messaging")
     
     implementation("androidx.core:core-ktx:1.15.0")
